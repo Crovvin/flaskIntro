@@ -7,21 +7,21 @@ def addOp():
     a = int(request.args.get("a"))
     b = int(request.args.get("b"))
     answer = add(a, b)
-    return str(result)
+    return str(answer)
 
 @app.route("/sub")
 def subOp():
     a = int(request.args.get("a"))
     b = int(request.args.get("b"))
     answer = sub(a, b)
-    return str(result)
+    return str(answer)
 
 @app.route("/mult")
 def multOp():
     a = int(request.args.get("a"))
     b = int(request.args.get("b"))
     answer = mult(a, b)
-    return str(result)
+    return str(answer)
 
 @app.route("/div")
 def divOp():
